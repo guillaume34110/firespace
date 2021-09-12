@@ -1,0 +1,272 @@
+.game-contenair{
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100vw;
+    color : $White-opa;
+    border: solid 3px $Black;
+    overflow: hidden;
+
+}
+.user-hub{
+   
+    display: flex;
+    align-items: center;
+    height : 40px;
+    color: $White;
+    border-radius: 10px;
+   
+}
+.player-baliste{
+    
+    background-image: url("../assets/img/icons/spritesheetBliste60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform-origin: center;
+    transform: rotate(90deg);
+    
+}
+
+.laser{
+    position: absolute ;
+    left: 0px;
+    top : 0px;
+} 
+.bullet{
+   
+    background-image: url('../assets/img/icons/bullet.png');
+    height: 10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.map{
+    display: flex;
+   height: 100%;
+   width: 100%;
+  
+}
+ .game-over{
+ color: $White-opa;
+ }
+ .planet{
+    background-image: url("../assets/img/icons/spritesheetPlanet60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1440 2s steps(24) infinite ;
+}
+.planette{
+   
+    position : absolute ;
+    left : 0px ;
+    top : 0px ;
+}
+.spaceman{
+    background-image: url("../assets/img/icons/spritesheetSpaceman60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.vedette{
+    background-image: url("../assets/img/icons/spritesheetVedette60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform: rotate(270deg);
+}
+.transport{
+    background-image: url("../assets/img/icons/spritesheetTransport60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform: rotate(270deg);
+}
+.croiseur{
+    background-image: url("../assets/img/icons/spritesheetCroiseur60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform: rotate(270deg);
+}
+.vortex-jaune{
+    background-image: url("../assets/img/icons/spritesheetVortexcroiseur60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform: rotate(90deg);
+}
+
+.vortex-vert{
+    background-image: url("../assets/img/icons/spritesheetVortexVedette60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform: rotate(90deg);
+}
+.vortex-rouge{
+    background-image: url("../assets/img/icons/spritesheetVortexTransport60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1860 3s steps(31) infinite ;
+    transform: rotate(90deg);
+}
+.score-div{
+  
+    z-index: 100;
+    height: 50vh;
+    width : 70vw ;
+    overflow: auto;
+    color: $White-opa;
+    background : $Bluespd-opa;
+    border: solid 5px $White-opa;
+}
+.end-contenair{
+    display:flex;
+    justify-content: center;
+}
+.border{
+    border: solid 4px $Black;
+}
+.player-life{
+    background : $Redopas
+}
+.laser-sprite{
+    background-image: url("../assets/img/icons/spriteLaser.png");
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    animation: play-laser 1s steps(24) ;
+}
+.click-start{
+    z-index:100;
+}
+.blue-point{
+    cursor: none;
+    z-index : 1000;
+    background : $PaleBlue;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: solid 2px $Black;
+}
+.d-anim{
+  position : absolute ;
+  
+}
+.asteroid{
+    background-image: url("../assets/img/icons/spriteshhetAsteroid60p.png");
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    animation: play-1440 2s steps(24) infinite ;
+}
+.baliste-end{
+    background-image:$baliste-end;
+    height: 500px;
+    width: 880px;
+    background-repeat: no-repeat;
+    animation: play-35200 3s steps(40) infinite ; 
+}
+.vedette-end{
+    background-image: $vedette-end;
+    height: 500px;
+    width: 882px;
+    background-repeat: no-repeat;
+    animation: play-35280 3s steps(40) infinite ; 
+}
+.croiseur-end{
+    background-image: $croiseur-end;
+    height: 500px;
+    width: 882px;
+    background-repeat: no-repeat;
+    animation: play-35280 3s steps(40) infinite ; 
+}
+.transport-end{
+    background-image:$transport-end;
+    height: 500px;
+    width: 882px;
+    background-repeat: no-repeat;
+    animation: play-35280 3s steps(40) infinite ; 
+}
+.spaceman-end{
+    background-image: $spaceman-end;
+    height: 500px;
+    width: 882px;
+    background-repeat: no-repeat;
+    animation: play-35280 3s steps(40) infinite ; 
+}
+
+
+@keyframes play-laser {
+    
+    100% {
+      background-position: -480px;
+    }                     
+  }
+  @keyframes play-1860 {
+    100% {
+      background-position: -1860px;
+    }
+  }
+  @keyframes play-1440 {
+    100% {
+      background-position: -1440px;
+    }
+  }
+  @keyframes play-35200 {
+    100% {
+      background-position: -35200px;
+    }
+  }
+  @keyframes play-36162 {
+  100% {
+    background-position: -36162px;
+  }
+}
+
+@keyframes play-35280 {
+    100% {
+      background-position: -35280px;
+    }
+  }
+  @keyframes play-33516 {
+    100% {
+      background-position: -33516px;
+    }
+  }
+  .columned{
+    flex-direction: row;
+}
+  @media only screen and  (max-width: 850px){
+    .user-hub{
+        display: flex;
+        align-items: center;
+        height : 40px;
+        color: $White;
+        img{
+            height:16px;
+            width:16px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .columned{
+            flex-direction: column;
+        }
+        }
+        
+    }

@@ -1,0 +1,60 @@
+.map-display{
+    height: 99%;
+    width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    overflow: auto;
+    
+}
+.slot{ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px $Black;
+   
+}
+.mini-slot{
+    &:hover{
+        box-shadow: 0 0 0 8px $White-trans;
+        border-radius: 5%;
+    }
+}
+
+.popup{
+    display :flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    background :$Bluesp;
+    color:$White-opa;
+    border-radius: 20px;
+    border:  solid 5px $Black;
+    width:200px;
+    height: 150px;
+}
+.popup-arrow{
+    position :relative;
+    transform: rotate(180deg);
+}
+.popup-text{
+    position :relative ;
+    top : -15px;
+    
+}
+.close{
+    position: relative;
+    left :150px;
+    margin:5px 10px 5px 5px;
+}
+.spinner{
+    position : relative;
+    left :50% ;
+    top:50%;
+}
+.empty{
+    height: 60px;
+    width: 60px;
+}

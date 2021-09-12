@@ -1,0 +1,137 @@
+.btn{
+    align-self: center;
+    border-radius: 10px;
+    border:solid 5px $Black;
+    background : $Bluesp;
+    color: $White-opa;
+    width : 400px;
+    height :3.5rem;
+    font-size:40px;
+    &:hover{
+        color: $White;
+        background : $Bluespdark;
+    }
+}
+.select{
+    align-self: center;
+    border-radius: 10px;
+    border: solid 4px  transparent;
+    background : $Bluespdark;
+    width : 80%;
+    height :fit-content;
+    padding: 10px 15px;
+    font-size: 40px;
+    color:$White-opa;
+    &:hover{
+        border:solid 4px $Black;
+        color: $White;
+    }
+}
+.btn-techno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width :13vw;
+    border-radius: 10px;
+    border: none;
+    background : $Bluespdark;
+    min-width: fit-content;
+    height :2.5rem;
+    font-size: xx-large;
+    &:hover{
+        border:solid 4px $Black;
+        color: $White;
+    }
+}
+.active{
+    border: solid 4px $White;
+}
+.-stra{ text-align: center;
+    height: 50%;
+    background: $Redopass;
+    border: solid 4px transparent;
+    &:hover{
+        background: $Redopas;
+        color: $White;
+    }
+}
+.try-btn{
+    background: $Greenopas;
+    &:hover{
+        background: $Greenopa;
+        color: $White;
+    }
+}
+.erase-btn{
+    background: $Redopas;
+    &:hover{
+        background: $Redopa;
+        color: $White;
+    }
+}
+.selector{
+    
+        padding: 0px 5px;
+    background: $PaleBlueopa;
+    &:hover{
+        background: $PaleBlue;
+        color: $White;
+    }
+}
+.active-header{
+    background: $Bluespdark;
+    border : solid 2px $White;
+    
+}
+.end-btn{
+    z-index:1000;
+    border:solid 5px $White-opa;
+    &:hover{
+        border:solid 5px $White;
+    }
+}
+.active-end{
+    border:solid 5px $White;
+    color: $White;
+    background: $Redopa;
+}
+.hidden{
+    display: none;
+    position:absolute;
+}
+.unhidde{
+    display : flex;
+}
+.w-100p{
+    width: 100%;
+}
+.h-85p{
+    height: 85%;
+}
+.h-100p{
+    height: 100%;
+}
+.z--10{
+    z-index: -10;
+}
+@media only screen and  (max-width: 850px){
+    .btn{
+        align-self: center;
+        border-radius: 5px;
+        border:solid 3px $Black;
+        width : 300px;
+        height :2.5rem;
+        font-size:30px;
+    }
+}
+@media only screen and  (max-width: 600px){
+    .btn{
+        align-self: center;
+        border-radius: 5px;
+        border:solid 3px $Black;
+        width : 200px;
+        height :2.5rem;
+        font-size:30px;
+    }
+}

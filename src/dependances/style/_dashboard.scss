@@ -1,0 +1,618 @@
+.clan-active {
+  overflow: visible;
+
+  background: radial-gradient(circle, $Redopa 0%, rgba(245, 6, 6, 0) 100%);
+}
+
+.main-dash {
+  background-image: $main-background;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-dash {
+  background: $Bluesp-opa;
+  color: $White-opa;
+  border-radius: 20px;
+  border: solid 5px $Bluesp;
+  box-shadow: 5px 5px 2px 1px $Black;
+  width: 95%;
+  min-width: 340px;
+  height: 97%;
+  padding: 1vh 1vw;
+}
+.header-card {
+  background: $Bluesp;
+  justify-content: space-around;
+  color: $White-opa;
+  border-radius: 20px;
+  border: solid 5px $Black;
+  height: 20%;
+}
+.mini-header {
+  min-width: 200px;
+  align-items: center;
+  justify-content: space-around;
+  background: $Bluesp;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.nav-card {
+  justify-content: space-around;
+  background: $Bluesp;
+  width: 15%;
+  min-width: 250px;
+  height: 100%;
+  margin: 1vh 1vw 1vh 0vw;
+  border-radius: 20px;
+  border: solid 5px $Black;
+}
+.minichat-card {
+  background: $Bluesp;
+  color: $White-opa;
+  border-radius: 10px;
+  border: solid 5px $Black;
+  min-width: 250px;
+}
+.eco-card {
+  overflow: auto;
+  width: 80%;
+  min-width: 250px;
+  height: 100%;
+  margin: 1vh 0vw 1vh 0vw;
+  border-radius: 20px;
+  border: solid 5px $Black;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.star-background {
+  background-image: url("../assets/img/map_back.gif");
+}
+
+.icon {
+  margin-right: 4px;
+}
+.build-card {
+  width: 25%;
+  min-width: 250px;
+  height: 45%;
+  margin: 2vh 1vw 1vh 1vw;
+  border-radius: 20px;
+  border: solid 5px $Black;
+  background: $Bluesp;
+}
+.techno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.techno-card {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  min-width: 250px;
+  padding: 1vh 0;
+  margin: 1vh 1vw 1vh 1vw;
+  border-radius: 20px;
+  border: solid 5px $Black;
+  background: $Bluesp;
+}
+.chat-card {
+  width: 95%;
+  min-width: 250px;
+  height: 45%;
+  margin: 2vh 1vw 1vh 1vw;
+  border-radius: 20px;
+  border: solid 5px $Black;
+  background: $Bluesp;
+}
+.update-card {
+  margin: 5px;
+  line-height: 2.5rem;
+  input {
+    border: solid 2px $Black;
+  }
+  label {
+    font-size: large;
+  }
+}
+.msg-card {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+
+  textarea {
+    border: solid 3px $Black;
+    border-radius: 10px;
+    height: 70%;
+    width: 90%;
+    background: $White-opa;
+  }
+}
+#map-name {
+  line-height: normal;
+  width: fit-content;
+  padding: 0px;
+  padding-left: 5px;
+}
+
+.tuto-popup {
+  z-index: 100;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  background: $Bluesp;
+  color: $White-opa;
+  border-radius: 20px;
+  border: solid 5px $Black;
+  width: 400px;
+  height: fit-content;
+  font-size: large;
+}
+.blue-load {
+  z-index: 2000;
+  background: $Bluesp;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.load-bar {
+  z-index: 2021;
+  border: solid 5px $White-opa;
+  height: 50px;
+  width: 100%;
+}
+.load-progress {
+  z-index: 2012;
+  height: 100%;
+  background: $Redopa;
+  background: linear-gradient(
+    90deg,
+    #ff3d3d,
+    #ea4a4a 17%,
+    #ff4b4b 34%,
+    #ff0101 51%,
+    #ff2e2e 68%,
+    #ea4a4a 85%,
+    #ff4b4b
+  );
+  background-size: 300% 100%;
+  animation: progress-animation 2s linear infinite;
+}
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+.load-message {
+  z-index: 2021;
+  color: $White-opa;
+}
+.main-load {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.load-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  background: $Bluesp-opa;
+  border: solid 5px black;
+  padding: 5%;
+}
+.header-button {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 40vw;
+  width: 20vw;
+  height: 6vh;
+  background: $Bluespd-opa;
+  border-radius : 5px ;
+  border: 3px solid $Black;
+}
+.navbar-button {
+  display: none;
+  position: absolute;
+  top: 25vh;
+  left: 0px;
+  width: 3vw;
+  min-width: 30px;
+  height: 50vh;
+  border-radius : 5px ;
+  border: 3px solid $Black;
+  background: $Bluespd-opa;
+
+  p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+  }
+}
+.closer {
+  display: none;
+  background-image: url("../assets/img/close.png");
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 5px $White-trans);
+    border-radius: 5%;
+  }
+}
+.close-header {
+  left: 85vw;
+  top: 8vh;
+}
+.close-nav {
+  left: 85vw;
+  top: 8vh;
+}
+.fields{
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-height: 640px) {
+  .fields{
+    display: flex;
+    flex-direction:column ;
+    margin-bottom : 5vh;
+  }
+  .w-30{
+    width: 100%;
+  }
+  .header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: $Bluesp-opa;
+      border: 3px solid $White;
+    }
+  }
+  .navbar-button {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    &:hover {
+      background: $Bluesp-opa;
+      border: 3px solid $White;
+    }
+  }
+
+  .nav-card {
+    display: none;
+  }
+  .eco-card {
+    overflow: auto;
+    width: 100%;
+    min-width: 250px;
+    height: 100%;
+    margin: 1vh 0vw 1vh 0vw;
+    border-radius: 10px;
+    border: solid 5px $Black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .asteroid {
+      background-image: url("../assets/img/icons/spriteshhetAsteroid30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-720 2s steps(24) infinite;
+    }
+    .empty {
+      height: 30px;
+      width: 30px;
+    }
+    .player-baliste {
+      background-image: url("../assets/img/icons/spritesheetBliste30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(90deg);
+    }
+    .planet {
+      background-image: url("../assets/img/icons//spritesheetPlanet30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-720 2s steps(24) infinite;
+    }
+    .spaceman {
+      background-image: url("../assets/img/icons/spritesheetSpaceman30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    .vortex-jaune {
+      background-image: url("../assets/img/icons/spritesheetVortexcroiseur30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(270deg);
+    }
+
+    .vortex-vert {
+      background-image: url("../assets/img/icons/spritesheetVortexVedette30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(270deg);
+    }
+    .vortex-rouge {
+      background-image: url("../assets/img/icons/spritesheetVortexTransport30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(270deg);
+    }
+  }
+  .mini-slot {
+    height: 30px;
+    width: 30px;
+  }
+  .main-second {
+   
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    
+  }
+  .header-card {
+    display: none;
+
+    .wm-450px {
+      min-width: 100px;
+    }
+    .wm-420px {
+      min-width: 100px;
+    }
+  }
+  .nav-card {
+    flex-direction: row;
+  }
+  .head-column{
+      flex-direction: column;
+      p{
+        font-size:x-large;
+      }
+  }
+  #map-name{
+    width: 84%;
+  }
+  .-dash{
+    position :relative;
+    top : -33vh;
+    left: 2vh;
+  }
+  .-regl{
+    position :relative;
+    top : 33vh;
+    left: -2vh;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  .-dash{
+position:relative;
+top:30px;
+  }
+  .fields{
+    display: flex;
+    flex-direction: column;
+  }
+  .w-30{
+    width: 100%;
+  }
+    .header-button {
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &:hover {
+          background: $Bluesp-opa;
+          border: 3px solid $White;
+        }
+      }
+      .navbar-button {
+        z-index: 100;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        &:hover {
+          background: $Bluesp-opa;
+          border: 3px solid $White;
+        }
+      }
+      #asteroid{
+        position:relative;
+        top: 35px
+      }
+      #planet{
+        position:relative;
+        top: 35px
+      }
+      #player-baliste{
+        position:relative;
+        top: 35px
+      }
+      #spaceman{
+        position:relative;
+        top: 35px
+      }
+      #vortex1{
+        position:relative;
+        top: 35px
+      }
+      #vortex2{
+        position:relative;
+        top: 35px
+      }
+      #vortex3{
+        position:relative;
+        top: 35px
+      }
+      #empty{
+        position:relative;
+        top: 35px
+      }
+  .eco-card {
+    position: relative;
+    left: 3vw;
+    overflow: auto;
+    width: 100%;
+    min-width: 250px;
+    height: 100%;
+    margin: 1vh 0vw 1vh 0vw;
+    border-radius: 10px;
+    border: solid 5px $Black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .asteroid {
+      background-image: url("../assets/img/icons/spriteshhetAsteroid30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-720 2s steps(24) infinite;
+    }
+    .empty {
+      height: 30px;
+      width: 30px;
+    }
+    .player-baliste {
+      background-image: url("../assets/img/icons/spritesheetBliste30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(90deg);
+    }
+    .planet {
+      background-image: url("../assets/img/icons//spritesheetPlanet30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-720 2s steps(24) infinite;
+    }
+    .spaceman {
+      background-image: url("../assets/img/icons/spritesheetSpaceman30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+    .vortex-jaune {
+      background-image: url("../assets/img/icons/spritesheetVortexcroiseur30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(270deg);
+    }
+
+    .vortex-vert {
+      background-image: url("../assets/img/icons/spritesheetVortexVedette30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(270deg);
+    }
+    .vortex-rouge {
+      background-image: url("../assets/img/icons/spritesheetVortexTransport30p.png");
+      height: 30px;
+      width: 30px;
+      background-repeat: no-repeat;
+      animation: play-930 3s steps(31) infinite;
+      transform: rotate(270deg);
+    }
+  }
+
+  .nav-card {
+    display: none;
+    flex-direction: column;
+    height: 80%;
+    align-self: flex-end;
+  }
+
+  .mini-header {
+    
+    min-width: 200px;
+    align-items: left;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: $Bluesp;
+    padding: 2px;
+    border-radius: 8px;
+    height: 250px;
+    overflow: auto;
+  }
+  .close-nav {
+    left: 80vw;
+    top: 4vh;
+  }
+  .close-header {
+    left: 80vw;
+    top: 4vh;
+  }
+  .header-card {
+    display: none;
+    height: 100%;
+
+    .wm-450px {
+      min-width: 300px;
+    }
+    .wm-420px {
+      min-width: 300px;
+    }
+  }
+  .main-second {
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #map-name{
+    width: 84%;
+  }
+}

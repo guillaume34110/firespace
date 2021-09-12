@@ -1,0 +1,68 @@
+.mini-asteroid{
+    background-image: url("../assets/img/icons/spriteshhetAsteroid30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-720 2s steps(24) infinite ;
+}
+.mini-planet{
+    background-image: url("../assets/img/icons//spritesheetPlanet30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-720 2s steps(24) infinite ;
+}
+@keyframes play-720 {
+    100% {
+      background-position: -720px;
+    }
+  }
+.mini-spaceman{
+    background-image: url("../assets/img/icons/spritesheetSpaceman30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-930 3s steps(31) infinite ;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.mini-vortexvert{
+    background-image: url("../assets/img/icons/spritesheetVortexVedette30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-930 3s steps(31) infinite ;
+    transform: rotate(270deg);
+}
+.mini-vortexjaune{
+    background-image: url("../assets/img/icons/spritesheetVortexcroiseur30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-930 3s steps(31) infinite ;
+    transform: rotate(270deg);
+}
+.mini-vortexrouge{
+    background-image: url("../assets/img/icons/spritesheetVortexTransport30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-930 3s steps(31) infinite ;
+    transform: rotate(270deg);
+}.mini-baliste{
+    background-image: url("../assets/img/icons/spritesheetBliste30p.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    animation: play-930 3s steps(31) infinite ;
+    transform: rotate(90deg);
+}
+.mini-empty{
+    height: 30px;
+    width: 30px;
+}
+@keyframes play-930 {
+    100% {
+      background-position: -930px;
+    }
+  }

@@ -1,5 +1,7 @@
 # a small participative shooting game with firebase
 
+see demo :https://guillaume34110.github.io/firespace
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
